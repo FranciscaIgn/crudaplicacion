@@ -1,0 +1,155 @@
+:root{
+    --primary-main:#b7b1f3;
+    --primary-dark:#faf6f9;
+    --primary-light:#873380;
+    --secondary-main:#4d1c4d;
+    --secondary-dark: #827968;
+    --secondary-light: #ffffff;
+    }
+
+body{
+    background: rgb(255, 255, 255);
+}
+*{
+    color:#873380;
+}
+
+#btnUpdate{
+    display: none;
+}
+
+
+/*seccipon navbar*/
+
+.nav-link:hover{
+    color: #a85aa8 !important;
+}
+
+.navbar{
+background-color: #b7b1f3 !important;
+padding-left: 20px;
+}
+
+.nav-logo{
+    height: 60px;
+    margin-right: 26px;
+    filter: brightness(3);
+}
+.navbar-nav .nav-item:first-child .nav-link{
+    margin-left: 20px;
+}
+
+.navbar-text a.nav-link{
+    margin-right: 20px;
+}
+.navbar-toggler{
+    line-height: 1;
+    color: #ffffff !important;
+    background-color: #2d051b;
+    background: #4b0644;
+}
+.navbar-nav .nav-link{
+    color:#78527b !important;
+}
+.navbar-nav .nav-link:hover{
+    color: #d4d1cd !important;
+}
+.nav-link{
+    color: #78527b;
+}
+nav.bg-body-tertiary{
+    background-color:#532b59 ;
+}
+/* sección footer*/
+
+.footer{
+    background-color:var(--primary-main);
+    color:var(--secondary-main);
+}
+
+.footer-row{
+    display:flex;
+    flex-wrap:wrap; /*para que baje en grupo las columnas */
+    justify-content: center;
+}
+
+.footer-links{
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-links h6{
+    font-size: 14px;
+    color:var(--secondary-main);
+    margin-bottom: 25px;
+    font-weight: 500;
+    display: inline-block;
+
+}
+
+.footer-links ul {
+   list-style: none; 
+   padding:0;
+}
+
+.footer-links ul li {
+    margin-left: 0; 
+ }
+
+.footer-links ul li a {
+    font-size: 14px;
+    text-decoration:none;
+    color:var(--secondary-light);
+    display: block;
+    margin-bottom: 15px; 
+}
+
+.footer-links ul li a:hover {
+    padding-left: 4px;
+}
+.social-links{
+    display:flex;
+}
+.social-links a {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    width: 40px;
+    background-color: var(--primary-dark);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 30px; 
+    border-radius: 50%;
+    color: var(--secondary-light);
+    border-color: var(--primary-light);
+    
+}
+
+.social-links a:hover {
+    background-color: var(--primary-light);
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 600px){
+    .titulo2 {
+        display: block;
+      }  
+    }
+    
+    
+@media screen and (max-width: 600px) {
+    .footer-row {
+        flex-direction: column;
+        justify-content: center;
+ }
+ }
+
+ @media  screen and (max-width: 600px) {
+    .container{
+        flex-direction: column; }
+    
+ }
